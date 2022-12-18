@@ -220,6 +220,10 @@ $(document).ready(function() {
 		duration: 1200,
 	});
 
+	$(document).on('click','.menu_right_button', function(){
+		$('.main-menuright').toggleClass('show-contact');
+	});
+
 	
 
 }); /*====================== all js end ====================== */
