@@ -606,11 +606,13 @@ label.btn.btn-default:focus {
 .label_check {
   font-family: 'Yantramanav', sans-serif;
 }
-.form-group input {
+.form-group input, .form-group textarea {
   width: 100%;
   border: none;
   border-bottom: 2px solid #ededed;
-  height: 85px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #d3d3d3;
+  padding-left: 0;
 }
 .form-group input:focus {
   border-color: #151515;

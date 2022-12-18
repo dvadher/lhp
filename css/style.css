@@ -9,6 +9,9 @@ font-family: 'Source Serif Pro', serif;
 .bg-blue{
   background-color:#001659;
 }
+.text-red{
+  color:#d71f26;
+}
 .col-logo {
   background-color: #d71f26;
   width:300px;
@@ -95,6 +98,10 @@ font-family: 'Source Serif Pro', serif;
 /* Custom Header */
 .page-content {
   padding-top: 70px;
+}
+.breadcrumb {
+  margin-top: 62px;
+  padding: 100px 0px 20px;
 }
 /* custom class */
 
@@ -401,16 +408,6 @@ span.btn-plus {
 .featured_block .featured_block h5 {
   min-height: 70px;
 }
-/* .top-header {
-  transform: translatey(-0);
-  -moz-transition: all .5s;
-  -o-transition: all .5s;
-  -webkit-transition: all .5s;
-  transition: all .5s;
-}
-.custom-header.sticky .top-header {
-  transform: translatey(-100%);
-} */
 .container-fluid.top{
   position: relative;
   transition: all 0.5s linear 0s;
@@ -424,6 +421,59 @@ span.btn-plus {
 .custom-header.sticky  .menu_right_button{
   height: 60px;
 }
+.contact_form input::-webkit-input-placeholder, .contact_form textarea::-webkit-input-placeholder  { /* Edge */
+  color: #18181580;
+  font-size:15px;
+}
+
+.contact_form input:-ms-input-placeholder, .contact_form textarea:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #18181580;
+  font-size:15px;
+}
+
+.contact_form input::placeholder, .contact_form textarea::placeholder {
+  color: #18181580;
+  font-size:15px;
+}
+.contact_form {
+  padding: 58px;
+  padding-top: 52px;
+  background-color: #fff;
+  box-shadow: 0px 16px 32px 0px rgb(0 0 0 / 6%);
+  border-radius: 10px;
+}
+.contact_right_content .contact_block span {
+  font-size: 16px;
+  color: #7A7A7A;
+}
+.contact_right_content .contact_block .icon i {
+  height: 80px;
+  width: 80px;
+  background-color: #fff;
+  line-height: 80px;
+  text-align: center;
+  font-size: 24px;
+  border-radius: 50%;
+  margin-right: 30px;
+  transition: 0.5s;
+  box-shadow: 0px 16px 32px 0px rgb(0 0 0 / 6%);
+}
+.contact_right_content .contact_block h3 {
+  color: #263b5c;
+  font-weight: 600;
+  margin-top: 6px;
+  font-size: 20px;
+}
+.contact_right_content h2 span {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #d2d2d4;
+}
+
+
+
+
+/* contact form */
 
 @media only screen and (min-width: 300px) and (max-width: 767px) {
 
