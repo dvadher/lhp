@@ -39,7 +39,19 @@ $(document).ready(function () {
 		autoplayTimeout: 4000,
 		smartSpeed: 950,
 		margin:20,
-		
+		responsiveClass:true,
+		responsive:{
+			0:{
+				items:1.1,
+			},
+			600:{
+				items:1.1,
+			},
+			1000:{
+				items:1.1,
+			
+			}
+		}
 	});
 	/*====================== js for scrollTop ====================== */
 
