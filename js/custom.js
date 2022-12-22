@@ -53,22 +53,24 @@ $(document).ready(function () {
 			}
 		}
 	});
-	/*====================== js for scrollTop ====================== */
+	  /*====================== js for scrollTop ====================== */
+	  var btn = $('#button');
 
-	// // Add smooth scrolling to all links
-	$(".nav_jump").on('click', function (event) {
-		var _href = $(this).attr('href');
-		// Make sure this.hash has a value before overriding default behavior
-		if (_href !== "") {
-			// Prevent default anchor click behavior
-			event.preventDefault();
-
-			$('html, body').animate({
-				scrollTop: $(_href).offset().top
-			}, 800, function () { });
-		} // End if
-	});
-
+	  $(window).scroll(function() {
+		  if ($(window).scrollTop() > 500) {
+			  btn.addClass('show');
+		  } else {
+			  btn.removeClass('show');
+		  }
+	  });
+  
+	  btn.on('click', function(e) {
+		  e.preventDefault();
+		  $('html, body').animate({
+			  scrollTop: 0
+		  }, '500');
+	  });
+	  /*====================== js for scrollTop ====================== */
 
 	AOS.init({
 		duration: 1200,

@@ -197,6 +197,8 @@ span.top-text-line {
   width: 60px;
   height: 60px;
   object-fit: contain;
+  display: block;
+  margin: 0 auto;
 }
 .featured-col-img {
   object-fit: cover;
