@@ -197,6 +197,9 @@ span.top-text-line {
   width: 60px;
   height: 60px;
   object-fit: contain;
+ 
+}
+.featured-icon{
   display: block;
   margin: 0 auto;
 }
