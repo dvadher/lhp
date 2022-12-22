@@ -12,6 +12,9 @@ font-family: 'Source Serif Pro', serif;
 .text-light{
   color:#565969 !important;
 }
+.text-blue{
+  color: #001659 !important;
+}
 .text-red{
   color:#d71f26;
 }
@@ -605,7 +608,48 @@ h4.project_title {
   top: 20%;
   z-index: 999;
 }
-
+label.project_categories {
+  background-color: #d71f26;
+  font-size: 14px;
+  color: #fff;
+  padding: 7px 40px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: absolute;
+  background-image: url(../images/map.png);
+  font-weight: 700;
+}
+.comming-soon-pg .pg_content {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+}
+.logo_comming {
+  width: 40px;
+  height: 40px;
+}
+.pg_logo .front_logo {
+  width: 50px;
+}
+.pg_content.comming span {
+  color: #565969 !important;
+  font-weight: 600;
+  font-size: 16px;
+}
+.pg_content.comming h1 {
+ color: #000;
+  font-weight: 700;
+}
+.pg_content.comming{
+background-image: url(../images/default_pattern.png);
+}
+.comming-soon-pg .front_logo_band{
+  width: 90px;
+  height: 90px
+}
 /* contact form */
 
 
