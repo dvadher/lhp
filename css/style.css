@@ -655,6 +655,9 @@ background-image: url(../images/default_pattern.png);
 
 
 @media only screen and (min-width: 300px) and (max-width: 767px) {
+  .pg_content.comming h1{
+    line-height:60px
+  }
   .shadow-text{
     font-size: 60px;
   }
