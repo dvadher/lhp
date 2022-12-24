@@ -18,6 +18,9 @@ font-family: 'Source Serif Pro', serif;
 .text-red{
   color:#d71f26;
 }
+.font-bold{
+  font-weight:600;
+}
 .col-logo {
   background-color: #d71f26;
   width:300px;
@@ -184,12 +187,13 @@ span.top-text-line {
 .featured_block span, .service_service_block h5 {
   font-size: 12px;
   line-height: 2.33em;
-  letter-spacing: .1em;
+  letter-spacing: 1px;
   text-transform: uppercase;
-  font-weight: 500;
-  color: #565969;
   display: inline-block;
   margin: 0 0 5px;
+}
+.helthcare_services .service_service_block h5{
+  font-weight: 500;
 }
 .featured_block.text-block{
   padding: 20px;
@@ -463,22 +467,25 @@ span.btn-plus {
   color: #7A7A7A;
 }
 .contact_right_content .contact_block .icon i {
-  height: 80px;
-  width: 80px;
+  height: 50px;
+  width: 50px;
   background-color: #fff;
   line-height: 80px;
   text-align: center;
-  font-size: 24px;
+  font-size: 18px;
   border-radius: 50%;
   margin-right: 30px;
   transition: 0.5s;
   box-shadow: 0px 16px 32px 0px rgb(0 0 0 / 6%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .contact_right_content .contact_block h3, .contact_right_content .contact_block h3 a {
   color: #263b5c;
   font-weight: 600;
   margin-top: 6px;
-  font-size: 20px;
+  font-size: 18px;
 }
 .contact_right_content h2 span {
   -webkit-text-fill-color: transparent;
@@ -620,6 +627,19 @@ label.project_categories {
   background-image: url(../images/map.png);
   font-weight: 700;
 }
+h5.contact_block_heading {
+  background-color: #001659;
+  font-size: 14px;
+  color: #fff;
+  padding: 11px 40px;
+  border-top-right-radius: 12px;
+  text-transform: uppercase;
+  border-bottom-right-radius: 12px;
+  background-image: url(../images/map.png);
+  font-weight: 600;
+  display: inline-block;
+  letter-spacing: 0.5px;
+}
 .comming-soon-pg .pg_content {
   height: 100vh;
   display: flex;
@@ -650,11 +670,87 @@ background-image: url(../images/default_pattern.png);
   width: 90px;
   height: 90px
 }
+.map {
+  position: absolute;
+  left: 0;
+  width: 50%;
+  height: 100%;
+}
+.contact-col {
+  box-shadow: 0 0 2px 1px hsl(0deg 0% 40% / 8%);
+  padding-bottom: 30px;
+  border-bottom: 4px solid #ff5e14;
+}
+.contact-col  .contact_block {
+  padding: 0px 30px;
+}
+.about-services {
+  background: #fff;
+}
+.about-services span.btn-plus{
+  position: absolute;
+    bottom: 0;
+}
+.about-services .featured_block {
+  height: 300px !important;
+}
+.about-services .featured_block:hover p {
+color:#fff !important;
+}
+.about_featured-top{
+  top:35px
+}
+.about-services::after{
+  width: 20%;
+}
+.nav-tabs {
+  border-bottom: none;
+}
+.about-tab a {
+  font-size: 16px;
+}
+.about-tab .nav-item.nav-link.active {
+  background: #001659;
+  color: #fff;
+}
+.about-tab {
+  width: fit-content;
+  margin: 0 auto;
+  background: #56596914;
+  border-radius: 30px;
+}
+.about-tab .nav-item.nav-link {
+  border-radius: 30px;
+  padding: 7px 30px;
+  color: #001659;
+}
+.about_gallery .card {
+  background: #fff;
+  box-shadow: 0 2px 20px rgb(0 0 0 / 8%);
+  border-radius: 15px;
+  padding: 15px;
+}
+.about_gallery .card a{
+  width:100%;
+}
 /* contact form */
 
 
 
 @media only screen and (min-width: 300px) and (max-width: 767px) {
+  .about_featured-top {
+    top: 0;
+}
+.section-services.about-services .section_services_left {
+  margin-bottom: 30px;
+}
+.about_galler_pg{
+  padding-top: 30px;
+}
+  .map {
+    position: relative;
+    width:100%
+  }
   .pg_content.comming h1{
     line-height:60px
   }
