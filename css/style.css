@@ -158,8 +158,8 @@ font-family: 'Source Serif Pro', serif;
 }
 .hero-top-content h2 span {
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #d2d2d4;
+  -webkit-text-stroke-width: 0.8px;
+  -webkit-text-stroke-color: #001659;
 }
 span.top-text-line {
   width: 30px;
@@ -556,10 +556,10 @@ span.btn-plus {
 .slider-col button.owl-prev, .slider-col button.owl-next {
   background-color: #09316f !important;
   color: #fff !important;
-  width: 150px;
-  min-height: 48px;
+  width: 93px;
+  min-height: 30px;
   margin-bottom: 10px;
-  font-size: 16px !important;
+  font-size: 14px !important;
   text-transform: capitalize;
   display: flex;
   align-items: center;
@@ -612,8 +612,10 @@ h4.project_title {
 }
 .project_pg .owl-nav button {
   position: relative;
-  top: 20%;
-  z-index: 999;
+  top: -35px;
+  height: 30px;
+  float: right;
+  left: 81%;
 }
 label.project_categories {
   background-color: #d71f26;
@@ -733,11 +735,31 @@ color:#fff !important;
 .about_gallery .card a{
   width:100%;
 }
+.section-services.about-services a.featured_block p {
+  font-size: 17px !important;
+}
+.text-breath{
+  -webkit-animation: breath 8s ease-in-out alternate infinite;
+  -moz-animation: breath 8s ease-in-out alternate infinite;
+  animation: breath 8s ease-in-out alternate infinite;
+}
+@keyframes breath {
+  from { 
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05)
+  }
+} 
 /* contact form */
 
 
 
 @media only screen and (min-width: 300px) and (max-width: 767px) {
+  .project_pg .owl-nav button{
+    top: 0;
+    left: 0;
+  }
   .about_featured-top {
     top: 0;
 }
