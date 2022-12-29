@@ -22,11 +22,11 @@ font-family: 'Source Serif Pro', serif;
   font-weight:600;
 }
 .col-logo {
-  background-color: #d71f26;
   width:300px;
   display: flex;
   align-items: center;
   justify-content: center;
+  /* background-image: url(../images/map.png); */
 }
 .col-logo img{
   width: 100%;
